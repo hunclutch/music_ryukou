@@ -89,15 +89,15 @@ export function ChartList() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto p-6">
-      <div className="mb-6">
-        <h1 className="text-3xl font-bold mb-2">{chartData.chartName}</h1>
-        <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600">
+    <div className="max-w-6xl mx-auto p-4 sm:p-6">
+      <div className="mb-4 sm:mb-6">
+        <h1 className="text-2xl sm:text-3xl font-bold mb-2">{chartData.chartName}</h1>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm sm:text-base text-gray-600">
           <p>Chart date: {chartData.date}</p>
           {chartData.publishDate && chartData.publishDate !== chartData.date && (
             <p>• Published: {chartData.publishDate}</p>
           )}
-          <p className="ml-auto text-sm">
+          <p className="sm:ml-auto text-xs sm:text-sm">
             Showing {filteredSongs.length} of {chartData.songs.length} songs
           </p>
         </div>

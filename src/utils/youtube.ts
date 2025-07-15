@@ -90,7 +90,7 @@ export function createAppleMusicSearchUrl(song: Song): string {
     }
   }
   
-  return `https://music.apple.com/us/search?term=${encodedTitle}%20${encodedArtist}`;
+  return `https://music.apple.com/jp/search?term=${encodedTitle}%20${encodedArtist}`;
 }
 
 export function openAppleMusicSearch(song: Song): void {

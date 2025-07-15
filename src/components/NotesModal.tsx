@@ -62,7 +62,7 @@ export function NotesModal({ song, onClose }: NotesModalProps) {
             id="notes"
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
-            className="w-full h-32 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+            className="w-full h-32 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none text-gray-900"
             placeholder="What do you think about this song? Add your thoughts here..."
           />
         </div>
